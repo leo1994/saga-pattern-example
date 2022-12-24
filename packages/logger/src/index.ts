@@ -14,7 +14,7 @@ const customFormartToFile = (info: TransformableInfo): string => {
 }
 
 const customFormart = (info: TransformableInfo): string => {
-  const transactionalId = asyncLocalStorage.getStore()?.get('requestId') ?? 'unknown'
+  const transactionalId = asyncLocalStorage.getStore()?.get('requestId')
   const { level, message, ...rest } = info
   return ` ${level}: ${message} ${JSON.stringify({ transactionalId, ...rest })} `
 }
