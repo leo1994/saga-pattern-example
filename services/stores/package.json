@@ -7,7 +7,8 @@
     "test": "jest",
     "build": "npm run clean && tsc -b",
     "watch": "tsc -b -w",
-    "clean": "shx rm -rf dist"
+    "clean": "shx rm -rf dist",
+    "start:server": "node -r tsconfig-paths/register dist/server.ts"
   },
   "dependencies": {
     "@marketplace/core": "^1.0.0",
