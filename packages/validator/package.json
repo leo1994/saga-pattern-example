@@ -1,0 +1,11 @@
+{
+  "name": "@marketplace/validator",
+  "version": "1.0.0",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && tsc -b",
+    "watch": "tsc -b -w",
+    "clean": "shx rm -rf dist"
+  }
+}

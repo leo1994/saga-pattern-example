@@ -5,10 +5,15 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "tsc -b",
-    "watch": "tsc -b -w"
+    "build": "npm run clean && tsc -b",
+    "watch": "tsc -b -w",
+    "clean": "shx rm -rf dist"
   },
   "dependencies": {
-    "@marketplace/core": "^1.0.0"
+    "@marketplace/core": "^1.0.0",
+    "@marketplace/exceptions": "^1.0.0",
+    "@marketplace/logger": "^1.0.0",
+    "@marketplace/server": "^1.0.0",
+    "@marketplace/validator": "^1.0.0"
   }
 }

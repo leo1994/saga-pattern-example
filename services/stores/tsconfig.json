@@ -1,7 +1,18 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": "src",
     "outDir": "dist",
-  }
+    "rootDir": "src",
+    "paths": {
+      "@application/*": [
+        "./src/application/*"
+      ],
+      "@domain/*": [
+        "./src/domain/*"
+      ],
+      "@infrastructure/*": [
+        "./src/infrastructure/*"
+      ]
+    }
+  },
 }
