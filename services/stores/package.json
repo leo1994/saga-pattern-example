@@ -5,16 +5,16 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "npm run clean && tsc -b",
-    "watch": "tsc -b -w",
-    "clean": "shx rm -rf dist",
-    "dev:server": "nodemon --watch 'src/**' --ext 'ts,json' --ignore 'src/**/*.tests.ts' --exec 'ts-node -r dotenv/config -r tsconfig-paths/register src/server.ts'",
-    "start:server": "TS_NODE_BASEURL=./dist  node -r tsconfig-paths/register dist/server.js"
+    "build": "npx saga-build",
+    "watch": "npx saga-watch",
+    "dev:server": "npx saga-dev",
+    "start:server": "npx saga-start"
   },
   "dependencies": {
     "@marketplace/core": "^1.0.0",
     "@marketplace/exceptions": "^1.0.0",
     "@marketplace/logger": "^1.0.0",
+    "@marketplace/scripts": "^1.0.0",
     "@marketplace/server": "^1.0.0",
     "@marketplace/validator": "^1.0.0",
     "dotenv": "^16.0.3"

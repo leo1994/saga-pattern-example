@@ -4,9 +4,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "npm run clean && tsc -b",
-    "watch": "tsc -b -w",
-    "clean": "shx rm -rf dist"
+    "build": "npx saga-build",
+    "watch": "npx saga-watch"
   },
   "dependencies": {
     "@marketplace/store": "^1.0.0",

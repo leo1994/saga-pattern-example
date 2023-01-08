@@ -1,0 +1,14 @@
+{
+  "name": "@marketplace/scripts",
+  "version": "1.0.0",
+  "bin": {
+    "saga-clean": "bin/clean.js",
+    "saga-start": "bin/startServer.js",
+    "saga-build": "bin/build.js",
+    "saga-dev": "bin/devServer.js",
+    "saga-watch": "bin/watch.js"
+  },
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  }
+}
